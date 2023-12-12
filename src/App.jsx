@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
+import NavBar from './components/NavBar'
 
 const pokemonList = [
   {
@@ -46,8 +47,7 @@ function App() {
   return (
     <div>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      <button onClick={handlePrevClick}>Précédent</button>
-      <button onClick={handleNextClick}>Suivant</button>
+      <NavBar handleNextClick={handleNextClick} handlePrevClick={handlePrevClick} />
     </div>
   );
 }
