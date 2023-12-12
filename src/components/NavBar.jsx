@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 const NavBar = ({handlePrevClick, handleNextClick}) => {
     return (
         <div>
