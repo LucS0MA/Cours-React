@@ -37,11 +37,10 @@ function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
   useEffect(
-    () => {
-      alert("hello pokemon trainer :)");
-    },
-    []
-  );
+    () => 
+    alert("hello pokemon trainer :)")
+    ,[]
+    );
 
   return (
     <div>
