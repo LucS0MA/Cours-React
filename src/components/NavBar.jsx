@@ -1,8 +1,14 @@
-const NavBar = ({handlePrevClick, handleNextClick}) => {
+import React from 'react';
+
+const NavBar = (props) => {
+    console.log(props);
     return (
         <div>
-            <button onClick={handlePrevClick}>Précédent</button>
-            <button onClick={handleNextClick}>Suivant</button>
+        {props.listPokemon.map((pokemon, index) => (
+            <div key={pokemon.name}>
+            <button onClick={() => props.setPokemonIndex(index)}>{pokemon.name}</button>
+            </div>
+        ))}
         </div>
     )
 }
